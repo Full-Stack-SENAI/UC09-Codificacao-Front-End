@@ -6,7 +6,7 @@ const subtitulo = document.getElementById("subtitulo");
 
 // criando um ação para quando o botão for clicado
 botao.addEventListener("click", () => {
-    subtitulo.style.color = 'yellow';
+    subtitulo.style.color = 'deeppink';
 });
 
 // () => significa criar uma função, aula para o futuro do curso
