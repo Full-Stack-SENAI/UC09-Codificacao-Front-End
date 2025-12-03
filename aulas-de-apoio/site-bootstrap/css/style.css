@@ -1,0 +1,16 @@
+.tamanho{
+
+    font-size: 80px;
+    color: blueviolet;
+
+}
+
+#carouselExample img{
+    height: 300px;
+    width: 980px;
+}
+
+#galeria{
+    display: flex;
+    justify-content: space-around;
+}

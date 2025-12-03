@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #3498db;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+main{
+    padding: 30px;
+    text-align: center;
+    width: 1024px;
+    margin: 0 auto;
+}
+
+#banner{
+    width: 100%;
+}
+
+#banner img{
+    width: 1024px;
+}
+
+#galeria{
+    display: flex;
+    justify-content: space-around;
+}
+
+#galeria figure{
+    width: 30%;
+    background-color: #3498db;
+}
+
+#galeria img{
+    width: 280px;
+    height: 230px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
