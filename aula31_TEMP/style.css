@@ -1,0 +1,22 @@
+/* Conteúdo do arquivo: style.css */
+
+.img-carrossel {
+    /* Altura MÁXIMA para telas grandes e Altura MÍNIMA para telas pequenas */
+    /* Garante que a altura seja no máximo 600px, no mínimo 400px e flexível no meio */
+    height: clamp(400px, 50vw, 600px); 
+    
+    /* ESSENCIAL: Mantém a proporção e evita distorção */
+    object-fit: cover; 
+}
+
+/* Media Query Específica para Telas de Desktop (Acima de 1200px, como o seu 27") */
+@media (min-width: 1200px) {
+    .img-carrossel {
+        /* Define uma altura fixa maior para telas grandes (Ajuste este valor!) */
+        height: 600px; 
+        
+        /* Ou, se quiser que ocupe a maior parte da altura: */
+        /* height: 70vh; */
+    }
+}
+
