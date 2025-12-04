@@ -1,0 +1,45 @@
+/*Configurações da barra de navegação*/
+nav{
+
+    background-color:#396399;  /* Cor de fundo da barra de navegação */
+
+}
+ 
+nav ul{
+    display: flex; /*Flexbilização da tag*/
+
+}
+ 
+nav ul li{
+    list-style: none;/*Tira a bolinha da lista*/
+    padding: 15px; /*Espaçamento entre os elementos*/
+}
+ 
+li a{
+    text-decoration: none;/*Tira o sublinhado do hiperlink*/
+}
+
+/*Configurações da tag section*/
+.centro{
+    background-color: #303944; /*Cor de fundo da tag section*/
+    color: black; /*Cor da letra*/
+    height: 100px;  /*Altura da tag section, 100 pixels de altura*/
+}
+ 
+
+/*Configurações dos hiperlinks*/
+
+/*Link não visitado*/
+a:link{
+    color: black;
+}
+
+/*Link visitado*/
+a:visited{
+    color: black;
+}
+
+/*Link quando passar o mouse por cima*/
+a:hover{
+    color: white;
+}
