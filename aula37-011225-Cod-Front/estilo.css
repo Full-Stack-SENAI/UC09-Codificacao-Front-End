@@ -1,0 +1,91 @@
+/* Configurações gerais*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*Configurações da barra de navegação*/
+
+nav{
+    background-color:#396399;  /* Cor de fundo da barra de navegação */
+}
+ 
+nav ul{
+    display: flex; /*Flexbilização da tag*/
+}
+ 
+nav ul li{
+    list-style: none;/*Tira a bolinha da lista*/
+    padding: 15px; /*Espaçamento entre os elementos*/
+}
+ 
+li a{
+    text-decoration: none;/*Tira o sublinhado do hiperlink*/
+}
+
+li img{
+    height: 30px;
+}
+
+/*Configurações da tag section*/
+.centro{
+    background-color: #303944; /*Cor de fundo da tag section*/
+    color: black; /*Cor da letra*/
+/*  height: 100px;  Altura da tag section, 100 pixels de altura*/
+    display: flex;
+
+}
+ 
+.imagem{
+    display: flex;
+    flex-direction: column; /*Alinhando tudo em coluna*/
+    align-items: center; /*Alinhando ao centro*/
+    margin-left: 100px; /*Margem da esquerda*/
+    margin: 50px; /*Margem de todos os lados*/
+    background-color: white; /*cor do fundo*/
+    border: 2px solid black; /*borda, espessura, tipo e cor*/
+}
+
+.imagem img{
+    height: 100px; /*Tamanho da imagem*/
+}
+
+.preco{
+     color: grey; /*Cor da letra*/
+}
+
+.nome{
+    color: red; /*Cor da letra*/
+}
+
+/*Configurações dos hiperlinks*/
+
+/*Link não visitado*/
+a:link{
+    color: black;
+}
+
+/*Link visitado*/
+a:visited{
+    color: black;
+}
+
+/*Link quando passar o mouse por cima*/
+a:hover{
+    color: white;
+}
+
+/*Configuração do footer*/
+footer{
+    background-color: #396399;
+    text-align: center;
+    height: 50px; /*Altura do rodapé*/
+}
+
+footer p{
+    padding: 20px;
+    font-size: 18px; /*Tamanho da letra*/
+    font-weight: bold; /*Letra em negrito*/
+}

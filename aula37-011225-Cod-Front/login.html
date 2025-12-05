@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Login</title>
+</head>
+<body>
+    <nav> <!-- Tag de Navegação, vai conter os links para outras páginas -->
+        <ul> <!--Criação de listas (não ordenadas, bolinhas)-->
+            <li><a href="index.html"><img src="img/computador.png" alt=""></a></li> <!--Logo-->
+            <li>
+                <a href="index.html">Página inicial</a> <!--Tag âncora, conecta as outras partes do site -->
+            </li> <!--Item da lista-->
+            <li><a href="#">Catálogo</a></li>
+            <li><a href="#">Cadastro</a></li>
+        </ul>
+    </nav>  
+ 
+    <main> <!--Tag que indica que é o conteúdo principal da página-->
+        <section class="section-login">
+            <form action="" method="post" id="login"> <!--Formulário, o método post indica que vamos enviar informações para a api/banco de dados-->
+                <p> <!--Tag de 'Paragrafo'-->
+                    <label for="usuario">Nome:</label> <!--Tag de legenda -->
+                    <input id="usuario" name="usuario" required="required" type="text" placeholder="usuario123"> <!-- Tag para inserção de informações -->
+                <!--
+               
+                 name - Fornece o nome que será usado para enviar o valor desse campo ao servidor (backend) quando o formulário for submetido.
+                 required="required" - O atributo required (obrigatório), um atributo booleano
+                 type="password" - Especifica o tipo de controle a ser exibido.
+                 placeholder - Exibe um texto de sugestão ou um breve exemplo dentro do campo de entrada antes que o usuário digite algo
+               
+                 -->    
+               
+               
+                </p>
+                <p>
+                    <label for="senha">Senha:</label>
+                    <input id="senha" name="senha" required="required" type="password" placeholder="senha@1234">
+                </p>
+                <p>
+                    <input type="button" value="login" id="btn-login">
+                </p>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
