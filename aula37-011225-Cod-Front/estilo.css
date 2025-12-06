@@ -60,6 +60,22 @@ li img{
     color: red; /*Cor da letra*/
 }
 
+/*Configurações do formulário*/
+main{
+    /*background-color: #303944;  Cor de fundo*/
+    height: 250px; /*Altura da tag*/
+    display: flex; /*Flexibilização dos elementos da tag*/
+    justify-content: center; /*Alinhamento dos elementos horizontalmente*/
+    align-items: center; /*Alinhamento dos elemento Verticalmente*/
+   
+}
+form{
+    border: 2px solid #303944; /*Borda, solida de cor #303944*/
+    padding: 50px; /*Determina o espaçamento interno do formulário*/
+    border-radius: 10px; /*Arredonda as pontas da borda*/
+    box-shadow: 5px 5px #C0C0C0; /*Sombra, 5px em baixo e 5px a direita de cor #C0C0C0 (cinza claro)*/
+}
+
 /*Configurações dos hiperlinks*/
 
 /*Link não visitado*/
