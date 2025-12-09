@@ -1,107 +1,141 @@
-/* Configurações gerais*/
-*{
+/* Configurações gerais */
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
+    /* MUDANÇA: Fonte moderna (sem serifa) para ficar mais tecnológico */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/*Configurações da barra de navegação*/
-
-nav{
-    background-color:#396399;  /* Cor de fundo da barra de navegação */
-}
- 
-nav ul{
-    display: flex; /*Flexbilização da tag*/
-}
- 
-nav ul li{
-    list-style: none;/*Tira a bolinha da lista*/
-    padding: 15px; /*Espaçamento entre os elementos*/
-}
- 
-li a{
-    text-decoration: none;/*Tira o sublinhado do hiperlink*/
+/* Configurações da barra de navegação */
+nav {
+    background-color: #396399;
 }
 
-li img{
+nav ul {
+    display: flex;
+    justify-content: flex-start; /* Garante que comece na esquerda */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+nav ul li {
+    list-style: none;
+    padding: 15px;
+}
+
+li a {
+    text-decoration: none;
+    color: black; /* Garante cor legível */
+    font-weight: 500;
+}
+
+/* Efeito ao passar o mouse no menu */
+li a:hover {
+    color: white; 
+}
+
+li img {
     height: 30px;
+    vertical-align: middle;
 }
 
-/*Configurações da tag section*/
-.centro{
-    background-color: #303944; /*Cor de fundo da tag section*/
-    color: black; /*Cor da letra*/
-/*  height: 100px;  Altura da tag section, 100 pixels de altura*/
+/* Configurações da tag section (Index) */
+.centro {
+    background-color: #303944;
     display: flex;
-
+    justify-content: center; /* Centraliza o conteúdo */
+    padding: 50px 0; /* Espaço em cima e embaixo */
 }
- 
-.imagem{
+
+.imagem {
     display: flex;
-    flex-direction: column; /*Alinhando tudo em coluna*/
-    align-items: center; /*Alinhando ao centro*/
-    margin-left: 100px; /*Margem da esquerda*/
-    margin: 50px; /*Margem de todos os lados*/
-    background-color: white; /*cor do fundo*/
-    border: 2px solid black; /*borda, espessura, tipo e cor*/
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 8px; /* Cantos arredondados */
+    padding: 20px;
+    width: 300px; /* Largura fixa para ficar bonito */
 }
 
-.imagem img{
-    height: 100px; /*Tamanho da imagem*/
+.imagem img {
+    width: 100%; /* Imagem se adapta à caixa */
+    height: auto;
+    max-height: 200px;
+    object-fit: contain;
 }
 
-.preco{
-     color: grey; /*Cor da letra*/
+.preco {
+    color: grey;
+    font-size: 1.2rem;
+    margin-top: 10px;
 }
 
-.nome{
-    color: red; /*Cor da letra*/
+.nome {
+    color: #ce1616;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 10px 0;
 }
 
-/*Configurações do formulário*/
-main{
-    /*background-color: #303944;  Cor de fundo*/
-    height: 250px; /*Altura da tag*/
-    display: flex; /*Flexibilização dos elementos da tag*/
-    justify-content: center; /*Alinhamento dos elementos horizontalmente*/
-    align-items: center; /*Alinhamento dos elemento Verticalmente*/
-   
-}
-form{
-    border: 2px solid #303944; /*Borda, solida de cor #303944*/
-    padding: 50px; /*Determina o espaçamento interno do formulário*/
-    border-radius: 10px; /*Arredonda as pontas da borda*/
-    box-shadow: 5px 5px #C0C0C0; /*Sombra, 5px em baixo e 5px a direita de cor #C0C0C0 (cinza claro)*/
+/* Configurações do Login */
+main {
+    height: 80vh; /* Ocupa 80% da altura da tela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f2f5; /* Fundo cinza claro suave */
 }
 
-/*Configurações dos hiperlinks*/
-
-/*Link não visitado*/
-a:link{
-    color: black;
+form {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra mais suave */
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espaço entre os campos */
+    width: 350px;
 }
 
-/*Link visitado*/
-a:visited{
-    color: black;
-}
-
-/*Link quando passar o mouse por cima*/
-a:hover{
+/* Configuração do botão login */
+#btn-login {
+    background-color: #364548;
     color: white;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; /* Mãozinha ao passar o mouse */
+    font-weight: bold;
+    transition: 0.3s; /* Animação suave */
 }
 
-/*Configuração do footer*/
-footer{
+#btn-login:hover {
+    background-color: #232d30; /* Escurece ao passar o mouse */
+}
+
+/* Configurações do Catálogo */
+.carrossel {
+    width: 100%;
+    max-width: 800px; /* Limite máximo de largura */
+    margin: 30px auto; /* Centraliza na tela */
+}
+
+.catalogo {
+    display: flex;
+    flex-wrap: wrap; /* Se não couber, joga pra linha de baixo */
+    justify-content: center;
+    gap: 20px; /* Espaço entre os cards */
+    padding: 20px;
+}
+
+/* Configuração do footer */
+footer {
     background-color: #396399;
     text-align: center;
-    height: 50px; /*Altura do rodapé*/
-}
-
-footer p{
     padding: 20px;
-    font-size: 18px; /*Tamanho da letra*/
-    font-weight: bold; /*Letra em negrito*/
+    color: white;
+    margin-top: auto; /* Empurra o footer pro final se tiver pouco conteúdo */
 }
